@@ -1,0 +1,11 @@
+{"timestamp": "2026-11-04T15:35:20.534091+00:00", "username": "researcher", "event": "TEST_EVENT", "status": "SUCCESS", "details": {"message": "Audit logging test"}}
+{"timestamp": "2026-11-04T16:14:33.196959+00:00", "username": "jksdbfd", "event": "LOGIN", "status": "FAILED", "details": {}}
+{"timestamp": "2026-11-04T16:14:58.247960+00:00", "username": "researcher", "event": "LOGIN", "status": "SUCCESS", "details": {}}
+{"timestamp": "2026-11-04T16:15:43.265221+00:00", "username": "researcher", "event": "FASTQ_VALIDATION", "status": "SUCCESS", "details": {"records": 20}}
+{"timestamp": "2026-11-04T16:15:43.266125+00:00", "username": "researcher", "event": "PSEUDONYMIZATION", "status": "SUCCESS", "details": {"records_processed": 20}}
+{"timestamp": "2026-11-04T16:15:45.605346+00:00", "username": "researcher", "event": "AWS_UPLOAD", "status": "SUCCESS", "details": {"bucket": "pharmasecure-genomic-poc-599117007421", "object_key": "genomic-data/20261104T161543305591Z_sample_data_2_pseudonymized.fastq", "integrity_status": "Verified", "encryption": "aws:kms", "object_lock": "GOVERNANCE"}}
+{"timestamp": "2026-11-04T16:20:11.218254+00:00", "username": "researcher", "event": "LOGIN", "status": "SUCCESS", "details": {}}
+{"timestamp": "2026-11-04T16:20:16.947601+00:00", "username": "researcher", "event": "FASTQ_VALIDATION", "status": "SUCCESS", "details": {"records": 20}}
+{"timestamp": "2026-11-04T16:20:16.948346+00:00", "username": "researcher", "event": "PSEUDONYMIZATION", "status": "SUCCESS", "details": {"records_processed": 20}}
+{"timestamp": "2026-11-04T16:20:19.200063+00:00", "username": "researcher", "event": "AWS_UPLOAD", "status": "SUCCESS", "details": {"bucket": "pharmasecure-genomic-poc-599117007421", "object_key": "genomic-data/20261104T162016990454Z_sample_data_2_pseudonymized.fastq", "integrity_status": "Verified", "encryption": "aws:kms", "object_lock": "GOVERNANCE"}}
+{"timestamp": "2026-11-04T16:43:04.193908+00:00", "username": "researcher", "event": "LOGIN", "status": "SUCCESS", "details": {}}
