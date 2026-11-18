@@ -5,22 +5,22 @@
 
 PharmaSecure is a Python-based prototype designed to demonstrate secure handling of genomic sequencing data for precision medicine research.
 
-The system provides researcher authentication, FASTQ file validation, pseudonymisation, encrypted AWS S3 storage and tamper-evident audit logging. It uses AWS KMS for data encryption and SHA-256 hashing to verify file integrity.
+The system provides researcher authentication, FASTQ file validation, pseudonymization, encrypted AWS S3 storage and tamper-evident audit logging. It uses AWS KMS for data encryption and SHA-256 hashing to verify file integrity.
 
 The project demonstrates how sensitive genomic research data can be processed and stored with basic security and access controls.
 
 ## Key Features
 
-- **Researcher Authentication** — Secure login using Argon2 password hashing.
-- **Role-Based Access** — Controls genomic file upload permissions based on user roles.
-- **FASTQ Validation** — Checks sequencing file structure and DNA sequence data.
-- **Data Pseudonymisation** — Replaces original FASTQ read identifiers with generated pseudonymous identifiers.
-- **AWS S3 Storage** — Stores processed genomic files in Amazon S3.
-- **KMS Encryption** — Uses AWS Key Management Service for server-side encryption.
-- **S3 Object Lock** — Applies Governance-mode retention to uploaded objects.
-- **SHA-256 Integrity Verification** — Compares file hashes before and after upload.
-- **Tamper-Evident Audit Logging** — Uses a SHA-256 hash chain to detect changes in audit records.
-- **Audit Log Viewer** — Allows users to review security events and verify audit log integrity.
+- Researcher Authentication: Secure login using Argon2 password hashing.
+- Role-Based Access: Controls genomic file upload permissions based on user roles.
+- FASTQ Validation: Checks sequencing file structure and DNA sequence data.
+- Data Pseudonymisation: Replaces original FASTQ read identifiers with generated pseudonymous identifiers.
+- AWS S3 Storage: Stores processed genomic files in Amazon S3.
+- KMS Encryption: Uses AWS Key Management Service for server-side encryption.
+- S3 Object Lock: Applies Governance-mode retention to uploaded objects.
+- SHA-256 Integrity Verification: Compares file hashes before and after upload.
+- Tamper-Evident Audit Logging: Uses a SHA-256 hash chain to detect changes in audit records.
+- Audit Log Viewer: Allows users to review security events and verify audit log integrity.
 
 ## Architecture and Workflow
 
@@ -61,32 +61,6 @@ The prototype follows a simple genomic data protection workflow.
 - S3 Object Lock
 - Hash-Chain Audit Logging
 
-## Project Structure
-
-    pharmasecure-genomic-prototype/
-    │
-    ├── app/
-    │   └── dashboard.py
-    │
-    ├── src/
-    │   ├── auth.py
-    │   ├── validation.py
-    │   ├── pseudonymization.py
-    │   ├── storage.py
-    │   └── audit.py
-    │
-    ├── data/
-    │   ├── sample_data_2.fastq
-    │   ├── synthetic_sample.fastq
-    │   └── pseudonymized/
-    │
-    ├── logs/
-    │   ├── audit.log
-    │   └── audit_legacy_backup.log
-    │
-    ├── test_audit.py
-    └── .gitignore
-
 ## Security Implementation
 
 ### Authentication
@@ -103,9 +77,9 @@ The validation module checks:
 - Sequence and quality length matching
 - Incomplete or empty records
 
-### Pseudonymisation
+### Pseudonymization
 
-The pseudonymisation module replaces original FASTQ read identifiers with randomly generated identifiers.
+The pseudonymization module replaces original FASTQ read identifiers with randomly generated identifiers.
 
 The DNA sequence itself is retained.
 
@@ -180,7 +154,7 @@ The AWS upload workflow checks:
 
 PharmaSecure is an educational proof of concept focused on genomic data protection.
 
-The current implementation demonstrates authentication, FASTQ validation, pseudonymisation, AWS storage security, file integrity verification and audit logging.
+The current implementation demonstrates authentication, FASTQ validation, pseudonymization, AWS storage security, file integrity verification and audit logging.
 
 The following capabilities belong to the wider proposed architecture and are not implemented in this prototype:
 
