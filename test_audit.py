@@ -6,7 +6,7 @@ log_event(
     event="HASH_CHAIN_TEST",
     username="admin",
     status="SUCCESS",
-    details={"message": "Testing audit integrity"}
+    details={"message": "Testing audit integrity "}
 )
 
 result = verify_audit_log()

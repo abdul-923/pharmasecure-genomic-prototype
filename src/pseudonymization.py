@@ -31,7 +31,7 @@ def pseudonymize_fastq(input_file, output_file):
                 quality = source.readline()
 
                 if not sequence or not separator or not quality:
-                    raise ValueError("Incomplete FASTQ record.")
+                    raise ValueError("Incomplete FASTQ recorde.")
 
                 identifier = identifier.strip()
 
