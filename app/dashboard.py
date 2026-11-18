@@ -49,7 +49,7 @@ def load_audit_events():
 # --------------------------------
 
 st.set_page_config(
-    page_title="PharmaSecure Genomic Prototype",
+    page_title="PharmaSecure Genomic Prototype ",
     page_icon="🧬",
     layout="wide"
 )
